@@ -1,14 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Curricular Interactiva</title>
-  <link rel="stylesheet" href="estilos.css" />
-</head>
-<body>
-  <h1>Malla Curricular Interactiva</h1>
-  <div id="malla" class="malla-grid"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 20px;
+  color: #0d47a1;
+}
+
+h1 {
+  text-align: center;
+  color: #0277bd;
+}
+
+.malla {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.semestre {
+  border: 2px solid #81d4fa;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.semestre h2 {
+  margin-top: 0;
+  color: #01579b;
+}
+
+.ramo {
+  background-color: #b3e5fc;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #4fc3f7;
+  transition: all 0.2s ease-in-out;
+}
+
+.ramo:hover {
+  background-color: #81d4fa;
+}
+
+.ramo.bloqueado {
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+  border: 1px dashed #bdbdbd;
+  cursor: not-allowed;
+}
+
+.ramo.aprobado {
+  background-color: #c8e6c9;
+  border-color: #66bb6a;
+  color: #2e7d32;
+  font-weight: bold;
+}
