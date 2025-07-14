@@ -2,96 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Malla Curricular Interactiva</title>
   <link rel="stylesheet" href="estilos.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #e6f7ff;
-      color: #004d66;
-      margin: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #007acc;
-      margin-bottom: 30px;
-    }
-    .malla-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .semestre {
-      background: #ccf0ff;
-      border: 2px solid #66c0ff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 120, 190, 0.15);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .semestre h2 {
-      color: #0099e6;
-      margin-bottom: 18px;
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
-    .ramo {
-      background: #b3e0ff;
-      border-radius: 10px;
-      width: 100%;
-      margin-bottom: 12px;
-      padding: 10px 14px;
-      color: #004d66;
-      font-weight: 600;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: inset 0 -2px 4px #66c0ff;
-      transition: background-color 0.3s ease;
-      cursor: default;
-    }
-    .ramo.aprobado {
-      background: #99ffcc;
-      color: #006633;
-      box-shadow: inset 0 -2px 4px #33cc66;
-    }
-    .ramo.bloqueado {
-      background: #d1e9f7;
-      color: #a0aebf;
-      box-shadow: none;
-      pointer-events: none;
-    }
-    button.btn-aprobar {
-      background-color: #00b8ff;
-      border: none;
-      color: white;
-      font-weight: 700;
-      padding: 6px 12px;
-      border-radius: 7px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-    button.btn-aprobar:hover:not(:disabled) {
-      background-color: #0099cc;
-    }
-    button.btn-aprobar:disabled {
-      background-color: #99cce6;
-      cursor: default;
-    }
-  </style>
 </head>
 <body>
-  <h1>Malla Curricular - Pedagogía en Inglés</h1>
-
-  <div class="malla-container" id="malla-container">
-    <!-- Los semestres y ramos se generarán desde script.js -->
-  </div>
-
+  <h1>Malla Curricular Interactiva</h1>
+  <div id="malla" class="malla"></div>
   <script src="script.js"></script>
 </body>
 </html>
